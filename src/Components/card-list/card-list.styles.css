@@ -1,0 +1,26 @@
+.card-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+  background-color: #95dada;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 25px;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
